@@ -4,6 +4,7 @@
 #include <iostream>
 #include "example_interfaces/msg/bool.hpp"
 
+
 std::shared_ptr< rclcpp::Publisher<example_interfaces::msg::Bool> >   publisher;
 double obs_angle_min, obs_angle_max, obs_threshold;
 
