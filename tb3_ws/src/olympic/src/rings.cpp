@@ -11,7 +11,6 @@ int main(int argc, char * argv[])
  auto node = rclcpp::Node::make_shared("rings");
  auto publisher = node->create_publisher<geometry_msgs::msg::Twist>("turtle/cmd_vel", 10);
  geometry_msgs::msg::Twist message;
- auto publish_count = 0;
  rclcpp::WallRate loop_rate(500ms);
 
  while (rclcpp::ok()) {
@@ -22,4 +21,4 @@ int main(int argc, char * argv[])
  rclcpp::shutdown();
  return 0;
 }
-
+}
